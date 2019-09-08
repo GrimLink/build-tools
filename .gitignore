@@ -3,9 +3,5 @@
 
 # Development
 **/node_modules
-**/build/css
-**/build/js
-**/build/media
-**/build/fonts
 
 # Temporary/Cache

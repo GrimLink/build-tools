@@ -11,15 +11,18 @@ module.exports = grunt => {
 
     // Build config
     const config = {
+        baseDir: "build",
         index: "index.html",
-        proxy: "gulp.test",
+        proxy: "",
         clean: ["build/css", "build/js", "build/fonts"],
         styles: {
             src: "src",
             dest: "build/css",
             watch: "src/**/*.scss"
         },
-        scripts: { watch: "src/**/*.js" },
+        scripts: {
+            watch: "src/**/*.js"
+        },
         fonts: {
             src: "src/fonts/**",
             dest: "build/fonts"
@@ -67,7 +70,9 @@ module.exports = grunt => {
                 ]
             },
             dev: {
-                options: { map: { inline: false } },
+                options: {
+                    map: { inline: false }
+                },
                 src: ["<%= config.styles.dest %>/*.css"]
             },
             build: {
@@ -123,11 +128,22 @@ module.exports = grunt => {
                     "<%= config.scripts.watch %>"
                 ]
             },
-            options: {
-                watchTask: true,
-                open: false,
-                proxy: "<%= config.proxy %>"
-            }
+            options: (function() {
+                if (config.proxy) {
+                    return {
+                        watchTask: true,
+                        proxy: "<%= config.proxy %>"
+                    };
+                } else {
+                    return {
+                        watchTask: true,
+                        server: {
+                            baseDir: "<%= config.baseDir %>",
+                            index: "<%= config.index %>"
+                        }
+                    };
+                }
+            })()
         },
         watch: {
             styles: {

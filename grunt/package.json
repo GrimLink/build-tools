@@ -2,11 +2,12 @@
   "name": "grunt-setup",
   "version": "1.0.0",
   "description": "Grunt example build",
+  "author": "Sean van Zuidam (https://github.com/GrimLink)",
   "license": "MIT",
   "scripts": {
     "start": "npm run dev",
     "dev": "NODE_ENV='development' grunt dev",
-    "build": "NODE_ENV='production' grunt build"
+    "build": "grunt build"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
