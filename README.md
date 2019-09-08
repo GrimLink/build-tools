@@ -39,8 +39,10 @@ But I am not going to add this anymore.
 ### [Gulp](./gulp)
 
 Pretty much an port of Grunt but with more flexibility.
-Also I kept the tasks clean and simple.
-Compared to many Gulp configs have seen that just lost logic 😨
+
+I kept the tasks clean and simple.
+Compared to many Gulp configs I have seen.
+That just lost logic 😨
 
 I my current preferred build tool.
 
