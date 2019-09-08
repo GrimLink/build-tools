@@ -28,5 +28,11 @@
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3",
     "webpack-stream": "^5.2.1"
-  }
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 2%",
+    "not dead",
+    "last 3 iOS major versions"
+  ]
 }
