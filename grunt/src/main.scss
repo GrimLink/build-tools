@@ -1,3 +1,6 @@
+$enable-utilkit: ("text");
+@import "@fylgja/utilkit";
+
 html {
     box-sizing: border-box;
 }
@@ -12,6 +15,7 @@ $bg: #e48632;
 $fg: #fff;
 
 body {
+    @extend %util-text-center;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -19,7 +23,6 @@ body {
     background-color: $bg;
     color: $fg;
     font-family: system-ui, sans-serif;
-    text-align: center;
 }
 
 main {
@@ -28,7 +31,6 @@ main {
 
 h1 {
     font-size: 3rem;
-    font-family: SourceSansPro, sans-serif;
 }
 
 .container {
