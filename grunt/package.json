@@ -2,7 +2,6 @@
   "name": "grunt-setup",
   "version": "1.0.0",
   "description": "Grunt example build",
-  "main": "index.js",
   "license": "MIT",
   "scripts": {
     "start": "npm run dev",
@@ -32,5 +31,11 @@
     "stylelint": "^9.10",
     "webpack": "^4.29.5",
     "webpack-cli": "^3.2.3"
-  }
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 2%",
+    "not dead",
+    "last 3 iOS major versions"
+  ]
 }
