@@ -1,6 +1,6 @@
-# Task runners en Bundlers
+# Dev Build tools
 
-This repo contains sample setups for each Task runner en Bundler.
+This repo contains sample setups for each Task runner en Bundlers.
 
 While the setup focuses an generic setup.
 It does have some opinionated things I feel are the best way to go.
@@ -22,7 +22,7 @@ Don't hesitate to shoot an PR/Issue with why and how.
 
 ## Whats in the 📦
 
-### [Grunt](./grunt/README.md)
+### [Grunt](./grunt)
 
 Grunt setup with Webpack for JS bundeling.
 
@@ -36,7 +36,7 @@ And JS via the power of webpack.
 I was planing to also add an Uglify option so you don't need the Webpack.
 But I am not going to add this anymore.
 
-### [Gulp](./gulp/README.md)
+### [Gulp](./gulp)
 
 Pretty much an port of Grunt but with more flexibility.
 Also I kept the tasks clean and simple.
@@ -48,7 +48,7 @@ Just as Grunt it uses the power of Webpack for the JS.
 But I am planning to add an uglify option.
 Just because I want to see that option work as well.
 
-### [Parcel](./parcel/README.md)
+### [Parcel](./parcel)
 
 Sample setup using parcel.
 
@@ -64,11 +64,11 @@ But if you keep things simple you probably don't need this.
 I personally do need these configs for my build tools.
 So parcel is not my choice when to pick a build tool.
 
-### [Rollup](./rollup/README.md)
+### [Rollup](./rollup)
 
 _Sample not made yet_
 
-### [Webpack](./webpack/README.md)
+### [Webpack](./webpack)
 
 Like parcel webpack can also run without any config.
 
