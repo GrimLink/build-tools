@@ -1,0 +1,32 @@
+{
+  "name": "gulp-setup",
+  "version": "1.0.0",
+  "description": "Gulp example build",
+  "author": "Sean van Zuidam (https://github.com/GrimLink)",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "NODE_ENV='production' gulp dev",
+    "build": "gulp build"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@fylgja/stylelint-config": "^2.2.6",
+    "babel-loader": "^8.0.5",
+    "browser-sync": "^2.26",
+    "cssnano": "^4.1.10",
+    "del": "^3.0",
+    "fibers": "^3.1",
+    "gulp": "^4.0",
+    "gulp-postcss": "^8.0",
+    "gulp-sass": "^4.0",
+    "gulp-stylelint": "^8.0",
+    "postcss-preset-env": "^6.6.0",
+    "sass": "^1.17.2",
+    "stylelint": "^9.10",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-stream": "^5.2.1"
+  }
+}
