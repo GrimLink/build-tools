@@ -1,0 +1,11 @@
+# System files are ignored via global .gitignore
+# see https://help.github.com/articles/ignoring-files/#create-a-global-gitignore for more information
+
+# Development
+**/node_modules
+**/build/css
+**/build/js
+**/build/media
+**/build/fonts
+
+# Temporary/Cache
